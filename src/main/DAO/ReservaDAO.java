@@ -6,6 +6,7 @@ import main.modelo.Reserva;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Date;
 
 public class ReservaDAO {
 
@@ -72,6 +73,35 @@ public class ReservaDAO {
             return reservaList;
         } catch (SQLException e) {
             throw new RuntimeException();
+        }
+    }
+    public int eliminar(Long id) {
+        try {
+            final PreparedStatement statement = con.prepareStatement("DELETE FROM reserva where id = ?");
+            try (statement) {
+                statement.setLong(1, id);
+                statement.execute();
+                return statement.getUpdateCount();
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+
+        }
+    }
+
+    public int modificar( String formaPago, Long id ){
+        try {
+            PreparedStatement statement = con.prepareStatement("UPDATE reserva SET formaPago = ? where id = ?");
+            try (statement) {
+                statement.setString(1, formaPago);
+                statement.setLong(2, id);
+                statement.execute();
+                return statement.getUpdateCount();
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -4,6 +4,7 @@ import main.DAO.ReservaDAO;
 import main.factory.ConnectionFactory;
 import main.modelo.Reserva;
 
+import java.util.Date;
 import java.util.List;
 
 public class ReservaController {
@@ -23,6 +24,14 @@ public class ReservaController {
 
     public List<Reserva> lista(){
         return reservaDAO.lista();
+    }
+
+    public int eliminar (Long id){
+        return reservaDAO.eliminar(id);
+    }
+
+    public int modificar( String formaPago, Long id){
+        return  reservaDAO.modificar(formaPago, id);
     }
 
 }
