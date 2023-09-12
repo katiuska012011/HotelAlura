@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="jcalendar-1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/JCalendar-1.4/lib/jcalendar-1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/JCalendar-1.4/lib/jgoodies-common-1.2.0.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/JCalendar-1.4/lib/jgoodies-looks-2.4.1.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/JCalendar-1.4/lib/junit-4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JARS/c3p0-0.9.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JARS/jcalendar-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JARS/mchange-commons-java-0.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JARS/mysql-connector-j-8.0.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
